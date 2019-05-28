@@ -7,6 +7,15 @@
   <!-- Any other tasks -->
 
   <target name="test" depends="compile">
+
+  	  <!-- printsummary="yes": Print a one line summary at the end of the test -->
+
+  	  <!-- haltonerror="yes": Direct the build to stop if any test returns an error  -->
+
+  	  <!-- haltonfailure="yes":  Direct the build to stop if any rest returns a failure -->
+  	  
+  	  <!-- fork="yes": Force Ant to use a seperate JVM for each test. This is a performance hit but good practice if you're worried about interference between tests -->
+
 	  <junit printsummary="yes" haltonerror="yes" haltonfailure="yes" fork="yes">
 	    <formatter type="plain" usefile="false" />
 	    <test name="package.TestClass">
