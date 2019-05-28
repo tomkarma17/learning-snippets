@@ -1,0 +1,23 @@
+<!-- The rest of the configuration file has been omitted -->
+
+<developers>
+
+	<developer>
+	    <name>Petar Tahchiev</name>
+	    <id>ptahchiev</id>
+	    <organization>Apache Software Foundation</organization>
+	    <roles>
+	        <role>Java Developer</role>
+	    </roles>
+	</developer>
+
+	<developer>
+	    <name>Gary Gregory</name>
+	    <id>ggregory</id>
+	    <organization>Apache Software Foundation</organization>
+	    <roles>
+	        <role>Java Developer</role>
+	    </roles>
+	</developer>
+
+</developers>
