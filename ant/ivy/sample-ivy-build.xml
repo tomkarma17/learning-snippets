@@ -1,0 +1,15 @@
+<!-- Attributes for project element have been omitted, see ../sample-properties.xml -->
+
+<project xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<property file="build.properties" />
+
+	<!-- some properties omitted -->
+
+	<ivy:retrieve file="./ivy.xml" syn="true" />
+
+	<!-- some properties omitted -->
+
+	<!-- targets omitted -->
+
+</project>
