@@ -1,0 +1,13 @@
+<!-- The rest of the configuration file has been omitted -->
+
+<description>
+"JUnit in Action II" book, the sample project for the "Running Junit
+tests from Maven" chapter.
+</description>
+
+<organization>
+  <name>Manning Publications</name>
+  <url>http://manning.com/</url>
+</organization>
+
+<inceptionYear>2008</inceptionYear>
