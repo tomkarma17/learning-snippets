@@ -1,0 +1,33 @@
+<!-- Attributes for project element have been omitted, see sample-properties.xml -->
+
+<project>
+
+  <!-- Some properties omitted -->
+
+  <property name="target.report.dir" location="${target.dir}/report" />
+
+  <!-- some targets omitted -->
+
+  <target name="test" depends="compile">
+    <mkdir dir="${target.report.dir}" />
+    <junit printsummary="yes" haltonerror="yes" haltonfailure="yes" fork="yes">
+      <formatter type="xml" />
+      <test name="package.TestClass" todir="${target.report.dir}" />
+      <classpath>
+        <pathelement location="${target.classes.java.dir}" />
+        <pathelement location="${target.classes.test.dir}" />
+      </classpath>
+    </junit>
+  </target>
+
+  <target name="report" depends="test">
+    <mkdir dir="${target.report.dir}/html" />
+    <junitreport todir="${target.report.dir}">
+      <fileset dir="${target.report.dir}">
+        <include name="TEST-*.xml" />
+      </fileset>
+      <report todir="${target.report.dir}/html" />
+    </junitreport>
+  </target>
+
+</project>
