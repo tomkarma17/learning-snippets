@@ -1,0 +1,17 @@
+<!-- The rest of the configuration file has been omitted -->
+
+<dependencies>
+
+  <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.5</version>
+  </dependency>
+
+  <dependency>
+    <groupId>jmock</groupId>
+    <artifactId>jmock</artifactId>
+    <version>1.0.1</version>
+  </dependency>
+
+</dependencies>
