@@ -1,0 +1,27 @@
+<!-- See declaration of properties in sample-properties.xml -->
+<!-- Attributes for project element have been omitted, see sample-properties.xml -->
+
+<project>
+
+  <!-- Properties -->
+
+  <target name="compile.java">
+    <mkdir dir="${target.classes.java.dir}" />
+    <javac destdir="${target.classes.java.dir}">
+      <src path="${src.java.dir}" />
+    </javac>
+  </target>
+
+  <target name="compile.test" depends="compile.java">
+    <mkdir dir="${target.classes.test.dir}" />
+    <javac destdir="${target.classes.test.dir}">
+      <src path="${src.test.dir}" />
+      <classpath>
+        <pathelement location="${target.classes.java.dir}" />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="compile" depends="compile.java, compile.test" />
+
+</project>

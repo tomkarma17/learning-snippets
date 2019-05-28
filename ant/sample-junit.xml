@@ -1,0 +1,21 @@
+<!-- Attributes for project element have been omitted, see sample-properties.xml -->
+
+<project>
+
+  <!-- Properties -->
+
+  <!-- Any other tasks -->
+
+  <target name="test" depends="compile">
+	  <junit printsummary="yes" haltonerror="yes" haltonfailure="yes" fork="yes">
+	    <formatter type="plain" usefile="false" />
+	    <test name="package.TestClass">
+	    	<classpath>
+	    		<pathelement location="${target.classes.java.dir}" />
+	    		<pathelement location="${target.classes.test.dir}" />
+	    	</classpath>
+	    </test>
+	  </junit>
+  </target>
+
+</project>
