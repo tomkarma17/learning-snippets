@@ -1,9 +1,15 @@
 <project>
 
+	<!-- The model version of the POM being used. Currently the only supported version is 4.0.0 -->
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>my.group.id</groupId>
+
 	<artifactId>example-pom</artifactId>
+
+	<!-- Could be one of: jar, war, ear, or pom -->
 	<packaging>jar</packaging>
+
 	<version>2.0-SNAPSHOT</version>
 
 	<!-- Dependencies have been omitted -->
