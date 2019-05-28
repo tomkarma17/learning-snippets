@@ -1,0 +1,39 @@
+<!-- Attributes for project element have been omitted, see sample-properties.xml -->
+
+<project>
+
+  <!-- Properties omitted -->
+
+  <target name="test" depends="compile">
+
+    <mkdir dir="${target.report.dir}" />
+    <property name="tests" value="Test*" />
+
+    <junit printsummary="yes" haltonerror="yes" haltonfailure="yes" fork="yes">
+
+      <formatter type="plain" usefile="false" />
+      <formatter type="xml" />
+
+      <batchtest todir="${target.report.dir}">
+        <fileset dir="${src.test.dir}">
+          <include name="**/${tests}.java" />
+          <exclude name="**/Test*All.java" />
+        </fileset>
+      </batchtest>
+
+      <classpath>
+        <pathelement location="${target.classes.java.dir}" />
+        <pathelement location="${target.classes.test.dir}" />
+      </classpath>
+      
+    </junit>
+
+  </target>
+
+  <!-- Other targets omitted -->
+
+  <target name="clean">
+    <delete dir="${target.dir}" />
+  </target>
+
+</project>
