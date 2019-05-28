@@ -1,0 +1,11 @@
+<!-- The rest of the configuration file has been omitted -->
+
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.cactus</groupId>
+      <artifactId>cactus.integration.maven2</artifactId>
+      <version>1.8.1-SNAPSHOT</version>
+    </plugin>
+  </plugins>
+</build>
