@@ -1,0 +1,44 @@
+{
+  "_embedded": {
+    "tacoResourceList": [
+      {
+        "name": "Veg-Out",
+        "createdAt": "2018-01-31T20:15:53.219+0000",
+        "ingredients": [
+          {
+            "name": "Flour Tortilla", "type": "WRAP",
+            "_links": {
+              "self": { "href": "http://localhost:8080/ingredients/FLTO" }
+            }
+          },
+          {
+            "name": "Corn Tortilla", "type": "WRAP",
+            "_links": {
+              "self": { "href": "http://localhost:8080/ingredients/COTO" }
+            }
+          },
+          {
+            "name": "Diced Tomatoes", "type": "VEGGIES",
+            "_links": {
+              "self": { "href": "http://localhost:8080/ingredients/TMTO" }
+            }
+          },
+          {
+            "name": "Lettuce", "type": "VEGGIES",
+            "_links": {
+              "self": { "href": "http://localhost:8080/ingredients/LETC" }
+            }
+          }
+        ],
+        "_links": {
+          "self": { "href": "http://localhost:8080/design/4" }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "recents": {
+      "href": "http://localhost:8080/design/recent"
+    }
+  }
+}

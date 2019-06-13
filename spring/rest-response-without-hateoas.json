@@ -1,0 +1,12 @@
+{
+  "id": 4,
+  "name": "Veg-Out",
+  "createdAt": "2018-01-31T20:15:53.219+0000",
+  "ingredients": [
+    {"id": "FLTO", "name": "Flour Tortilla", "type": "WRAP"},
+    {"id": "COTO", "name": "Corn Tortilla", "type": "WRAP"},
+    {"id": "TMTO", "name": "Diced Tomatoes", "type": "VEGGIES"},
+    {"id": "LETC", "name": "Lettuce", "type": "VEGGIES"},
+    {"id": "SLSA", "name": "Salsa", "type": "SAUCE"}
+  ]
+}
