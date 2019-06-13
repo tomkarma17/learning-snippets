@@ -1,0 +1,4 @@
+some:
+  property: someValue
+other:
+  property: ${some.property}someOtherValue
